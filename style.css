@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #5f1d50;
+    --secondary-color: #a0c520;
+    --bg-blg_1: #ffe0f8;
+    --bg_blg_2: #F1A8E0;
+    --bg_blg_3: #E76FCC;
+    --bg_blg_4: #DB27B3;
+    --bg_cosmetique_1: #FFFBD8;
+    --bg_cosmetique_2: #FFDD55;
+    --color_orange: #EC6708;
+    --color_vert: #A0C520;
+    --light-color: white;
+}
+
+
+body{
+    font-family: sans-serif;
+
+}
+  
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(2, 50vw); */
+    position: relative;
+    overflow: hidden;
+    /* left: -50vw; */
+    /* right: -50vw; */
+}
+
+.cosmetique{
+    width: 50vw;
+    background-image: url(images/cosmetique\ bg\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--bg-blg_1);
+    position: relative;
+    
+}
+
+@keyframes descendre {
+    from { transform: translateY(-100%); } /* Déplace l'élément 100% au-dessus de l'écran */
+    to { transform: translateY(0); } /* Déplace l'élément à sa position normale */
+  }
+  
+
+    
+  
+.home header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: rgba(93, 120, 138, 0.1);
+    animation-delay: 30s;
+    animation: descendre 2s ease-in-out;
+    
+    
+}
+
+.home header nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    
+}
+
+.home header nav a {
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+.home header nav a:first-child{
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+
+
+
+.home header a > img{
+    max-height: 50px;
+}
+
+/* .cosmetique button, {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    padding: 1rem;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--light-color);
+} */
+.boulangerie{
+    width: 50vw;
+    background-image: url("images/patisseriebg1.png");
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-color: var(--bg_cosmetique_1);
+    padding: .5rem;
+    position: relative;
+    
+}
+
+
+.boulangerie nav{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.cosmetique .bouton, .boulangerie .bouton{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.cosmetique button{
+    /* position: absolute;
+    top: 25%;
+    left: 40%; */
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.boulangerie button{
+    /* position: absolute;
+    top: 25%;
+    left: 40%; */
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+/* animation pour le header */
+
+@keyframes apparaitre {
+    from { opacity: 0; transform: translateY(-100%);}
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+    
+
+  
+.cosmetique .bouton p, .boulangerie .bouton p{
+    /* position: absolute;
+    top: 34%;
+    left: 42%;  */
+    padding: .2rem 0;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: .85rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    animation-delay: 20s;
+    animation: apparaitre 3s ease-in-out;  /*faire apparaitre l'indice apres le chargement de la page*/
+    
+}
+.logo{
+    position: fixed;
+    right: 46%;
+    top: 45%;
+    z-index: 2;
+}
+
+.logo img{
+    max-height: 150px;
+}
+
+.logo #logo_blg{
+    display: none;
+}
+
+/* *****************animation sur les logos******************* */
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      display: ;
+    }
+    100% {
+        display: block;
+      opacity: 1;
+    }
+  }
+
+.logo .logo_app{
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fuite_animation {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(1000px) translateY(-60px);
+      opacity: 0;
+    }
+    
+}
+
+.logo .fuite_logo{
+    animation: fuite_animation 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+/* *******************partie presentation ******************* */
+.presentation-blg{
+    display: none;
+}
+.presentation-blg p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+@keyframes hiden {
+    0% {
+        width: 50vw;
+      }
+      100% {
+         width: 0;
+         padding: 0;
+      }
+}
+/* @keyframes display_blg {
+    0% {
+        display: block;
+      }
+      100% {
+        display: none;
+      }
+} */
+
+/* *****************class ajouter sur la div boulangerie lorsqu'on clique sur le btn ou lien */
+
+ .boulangerie.blg{
+    /* transform: translateX(50vw);
+    transition: transform 3s; */
+    animation: hiden 1s linear forwards;
+    /* animation: display_blg 1s linear;
+    animation-iteration-count: 1; */
+}
+
+.cosmetique.blg{
+    /* transform: translateX(-50vw); */
+    /* transition: transform 3s; */
+    animation: hiden .2s linear forwards;
+}
+.home .about_blg{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 50vw;
+    background-color: var(--bg_cosmetique_1);
+
+}
+/* *** presentation cosmetique *************** */
+
+.presentation-cos{
+    display: none;
+}
+
+.presentation-cos p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.home .about_cos{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 50vw;
+    background-color: var(--bg-blg_1);
+    padding: 0 3rem;
+
+}
