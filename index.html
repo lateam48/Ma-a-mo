@@ -4,72 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ma'a mo </title>
 </head>
 <body>
     <header>
-
+        <a href=""><img src="images/semi logo.png" alt=""></a>
+        <nav>
+            <a href="#" onclick="acceuil_click()" class="link_active">Acceuil</a>
+            <a href="#" id="cosmetique_link" onclick="fosso_click('cosmetique_click')">Cosmétique</a>
+            <a href="#" id="boulangerie_link" onclick="fosso_click('boulangerie_click')">Boulangerie</a>
+            <a href="#">Contact</a>
+            <a href="#">À Propos</a>
+        </nav>
     </header>
+    <div class="logo">
+        <img src="images/semi logo.png" alt="logo" id="logo_gen">
+        <!-- <img src="images/logo_cos.png" alt="logo_cos" id="logo_cos"> -->
+    </div>
     <section class="home">
-        <header>
-            <a href=""><img src="images/semi logo.png" alt=""></a>
-            <nav>
-                <a href="">Acceuil</a>
-                <a href="#" id="cosmetique_link">Cosmétique</a>
-                <a href="#" id="boulangerie_link">Boulangerie</a>
-                <a href="#">Contact</a>
-                <a href="#">À Propos</a>
-            </nav>
-        </header>
-        <div class="presentation-cos" id="presentation-cos">
-            <h2>Lorem ipsun</h2>
+        
+        <div class="about-cos" id="about-cos">
+            <h2>Ma'a Mo Cosmétique</h2>
             <p>
-                <span>Ma'a Mo Cosmétique</span>, votre boutique dédiée à la beauté africaine, vous invite à découvrir une sélection de produits cosmétiques naturels et de qualité, spécialement conçus pour répondre aux besoins de votre peau.
+                Votre boutique dédiée à la beauté africaine, vous invite à découvrir une sélection de produits cosmétiques naturels et de qualité, spécialement conçus pour répondre aux besoins de votre peau.
             </p>
             <h2>Notre mission</h2>
             <p>
                 Célébrer la beauté naturelle de la femme africaine en lui offrant des produits sains, efficaces et respectueux de sa peau.
             </p>
         </div>
+
         <div class="cosmetique" id="cosmetique">
             
+            <img src="images/logo_cos.png" id="logo_cos" alt="">
             <div class="bouton" id="btn_cosmetique">
-                <button>COSMETIQUES</button>
+                <button onclick="cosmetique_click()">COSMETIQUES</button>
                 <p>Cliquez pour entrer</p>
             </div>
         </div>
+
         <div class="boulangerie" id="boulangerie">
             
+            <img src="images/logo_blg.png"  id="logo_blg" alt="">
             <div class="bouton" id="btn_boulangerie">
-                <button>BOULANGERIE</button>
-                <p>Cliquez pour entrer</p>
+                <button onclick="boulangerie_click()">BOULANGERIE</button>
+                <p id="blg_paragraph">Cliquez pour entrer</p>
             </div>
         </div>
-        <div class="logo">
-            <img src="images/semi logo.png" alt="logo" id="logo_gen">
-            <img src="images/logo_blg.png" alt="logo_blg" id="logo_blg">
-        </div>
-        <div class="presentation-blg" id="presentation-blg">
-            <h2>Lorem ipsum</h2>
-            <h2>Lorem ipsum</h2>
+        
+        <div class="about-blg" id="about-blg">
+            <h2>Boulangerie MA'A MO</h2>
             <p>
-                La Boulangerie de MA'A MO est une boulangerie <br>
-                artisanale située à Yaoundé. Nous offrons une <br>
-                large varieté de pains, de viennoiseries et de <br>
-                patisseries, tous fabriqués avec des ingredients <br>
-                frais et de saison.
+                Chez MA'A MO, nous croyons que le bien-être passe par une bonne alimentation; c'est pourquoi nous donnons tout notre meilleur pour vous garantir l'assurance d'une satisfaction à chacune de vos bouchées.
+
+            <p>
+                Nous sommes une boulangerie artisanale située en plein coeur de la ville cosmopolite de Bafoussam ; nous mettons à votre disposition: du pain, des viennoiseries, des pâtisseries toujours savoureuses et de qualité supérieure
             </p>
 
             <p>
-                Nous sommes engagés à fournir à nos clients des <br>
-                produits de la plus haute qualité. Nous utilisons <br>
-                des ingredients frais et de saison, et nous <br>
-                fabriquons tous nos produits sur place.
+                <!-- Avec MA'A MO et ses produits frais de saison, offrez vous des instants de bonheur sains et savoureux -->
+                L'adoption d'un régime alimentaire sain tout au long de la vie contribue à prévenir toutes les formes de malnutrition, ainsi qu'un grand nombre de maladies et pathologies non transmissibles.
             </p>
+            
+            <img src="images/bread1.png" alt="">
         </div>
         
         
     </section>
+
 
     <script src="script.js"></script>
 </body>
