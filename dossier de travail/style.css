@@ -1,0 +1,129 @@
+:root{
+/* color */
+  --rouge_maamo: #5f1d50;  /* main color */
+  --vert_maamo: #a0c520; /*secondary-color*/
+  --bg-blg_1: #ffe0f8;
+  --bg_blg_2: #F1A8E0;
+  --bg_blg_3: #E76FCC;
+  --bg_blg_4: #DB27B3;
+  --bg_cosmetique_1: #FFFBD8;
+  --bg_cosmetique_2: #FFDD55;
+  --color_orange: #EC6708;
+  --color_vert: #A0C520;
+  --light-color: white;
+  --gris-bas:  #575656;
+
+  /* font */
+    --font_default_maamo: sans-serif;
+
+  /* distance */
+
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font_default_maamo);
+}
+
+/* ============= Footer =============== */
+
+footer{
+    background-color: var(--rouge_maamo);
+    color: white;
+    padding: 3rem;
+}
+
+footer h4{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: .3rem;
+    margin-bottom: .5rem;
+}
+
+footer > div {
+    width: 100%;
+}
+
+.footer_navigation{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.footer_navigation img{
+    max-height: 4rem;
+}
+
+.footer_navigation > div{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    /* background-color: #F1A8E0; */
+}
+
+.footer_navigation .liste_navigation{
+    width: 100%;
+    border-left: solid 2px white;
+    padding-left: 1rem;
+
+}
+
+.footer_navigation ul {
+    list-style-type: none;
+    width: 7rem;
+    
+   
+}
+
+.footer_navigation ul li{
+    padding: .3rem;
+    transition: .5s;
+
+}
+.footer_navigation ul li:hover{
+    transform: translateX(20px);
+}
+
+.footer_navigation ul li a{
+    color: white;
+}
+
+
+
+
+.footer_navigation > .footer_logo  {
+    width: fit-content;
+}
+.footer_navigation > .footer_logo  img {
+    margin: auto;
+    max-height: 5rem;
+}
+
+.footer_social {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+.footer_social div{
+    max-width: 50vw;
+    margin: auto;
+    padding: .5rem;
+}
+.footer_social .social_icon{
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+}
+.footer_social div a{
+    color: var(--color_vert);
+    text-decoration: none;
+    font-weight: 550;
+}
