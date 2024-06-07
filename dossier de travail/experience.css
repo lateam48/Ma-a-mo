@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3eea2;
+    width: 100vw;
+    overflow: hidden;
+ 
+}
+
+div{
+    border: 2px solid;
+    text-align: center;
+}
+p{
+    height: 50px;
+    font-size: 30px;
+    width: 100vw;
+}
+
+.div1 {
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 119, 255, 0.74);
+
+    /* pour deplacer le header */
+    /* transform: translateX(50vw); */ 
+}
+.cosmetique{
+    width: 100%;
+    background-color:#c1dff3;
+}
+.boulangerie{
+    width: 100%;
+    background-color:#e1c1f3;
+}
+
+
+.footer{
+    height: 20vh;
+    background-color: rgb(250, 235, 215);
+    width: 100vw;
+}

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <footer>
         <div class="footer_navigation">
             <div class="footer_cosmetique">
-                <img src="images/logo_cos.png" alt="">
+                <img src="Asset/images/logo_cos.png" alt="">
                 <h4>Cosmetique</h4>
                 <div class="liste_navigation">
                     <ul>
@@ -26,10 +27,10 @@
             </div>
             <div class="footer_logo">
                 <!-- <p>Bienvenue chez</p> -->
-                <img src="images/semi logo.png" alt="">
+                <img src="Asset/images/semi logo.png" alt="">
             </div>
             <div class="footer_boulangerie">
-                <img src="images/logo_blg.png" alt="">
+                <img src="Asset/images/logo_blg.png" alt="">
                 <h4>Boulangerie</h4>
                 <div class="liste_navigation">
                     <ul>
@@ -52,8 +53,28 @@
                 <i class="fa-solid fa-envelope"></i>
             </div>
             <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, blanditiis! </div>
-            <div>&copy; Proudly powered by <a href="https://www.team48.great-site.net/">TEAM 48</a> | 2024</div>
+            <div>&copy; Proudly powered by 
+                <em class="link_team48" onmouseover="show_team48_summary(true)" onmouseleave="show_team48_summary(false)"> 
+                    <a href="https://www.team48.great-site.net/" title="team48 blablablabla jskldqjflks">TEAM 48</a>
+                    <div class="hidden_item">
+                       <div class="hidden_item_wrapper">
+                        <div class="text">
+                            <a href="https://www.team48.great-site.net/">
+                                <p>Team 48, votre partenaire pour une digitalisation complète et réussie <em>en un mois seulement! </em>.
+                                    Propulser votre entreprise vers de nouveaux sommets en exploitant tout le potentiel du web.
+                                    Contactez-nous dès aujourd'hui pour <em>booster votre croissance !</em>
+                                </p>
+                            </a>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="Asset/images/logo team48.png" alt="">
+                        </div>
+                       </div>
+                    </div>
+                </em> | 2024</div>
         </div>
     </footer>
+    <script src="footer.js"></script>
 </body>
 </html>

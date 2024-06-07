@@ -79,8 +79,6 @@ footer > div {
 .footer_navigation ul {
     list-style-type: none;
     width: 7rem;
-    
-   
 }
 
 .footer_navigation ul li{
@@ -95,9 +93,6 @@ footer > div {
 .footer_navigation ul li a{
     color: white;
 }
-
-
-
 
 .footer_navigation > .footer_logo  {
     width: fit-content;
@@ -122,8 +117,77 @@ footer > div {
     gap: .8rem;
     justify-content: center;
 }
-.footer_social div a{
+
+
+.link_team48 {
+    font-style: normal;
+    position: relative;
+}
+
+.link_team48 a{
     color: var(--color_vert);
     text-decoration: none;
     font-weight: 550;
+    transition: 400ms;
+}
+
+.hidden_item{
+    display: none;
+    transition: opacity 4s;
+    opacity: 0;
+    position: absolute;
+    width: 30rem;
+    top: -18rem;
+    right: -1rem;
+    background-color: #f9f1f0;
+    border-radius: 5px;
+}
+
+.active_hidden_item{
+    display: block;
+    opacity: 1;
+}
+
+.hidden_item_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 30rem;
+    height: 17rem;
+    padding: 2rem;
+}
+
+.hidden_item_wrapper .image{
+    height: 100%;
+    width: 50%;
+    border-left: 1px solid black;
+}
+
+.hidden_item_wrapper .text {
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.hidden_item .text p{
+    color: black;
+    text-align: left;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.hidden_item .text p em{
+    font-style: normal;
+    color: #fd5956;
+    font-weight: 600;
+}
+
+.hidden_item img{
+    width: 11rem;
 }
