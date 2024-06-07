@@ -119,19 +119,19 @@ footer > div {
 }
 
 
-.link_team48 {
+footer .link_team48 {
     font-style: normal;
     position: relative;
 }
 
-.link_team48 a{
+footer .link_team48 a{
     color: var(--color_vert);
     text-decoration: none;
     font-weight: 550;
     transition: 400ms;
 }
 
-.hidden_item{
+footer .hidden_item{
     display: none;
     transition: opacity 4s;
     opacity: 0;
@@ -143,12 +143,12 @@ footer > div {
     border-radius: 5px;
 }
 
-.active_hidden_item{
+footer .active_hidden_item{
     display: block;
     opacity: 1;
 }
 
-.hidden_item_wrapper{
+footer .hidden_item_wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -158,13 +158,13 @@ footer > div {
     padding: 2rem;
 }
 
-.hidden_item_wrapper .image{
+footer .hidden_item_wrapper .image{
     height: 100%;
     width: 50%;
     border-left: 1px solid black;
 }
 
-.hidden_item_wrapper .text {
+footer .hidden_item_wrapper .text {
     height: 100%;
     width: 50%;
     border-right: 1px solid black;
@@ -175,19 +175,19 @@ footer > div {
 
 
 
-.hidden_item .text p{
+footer .hidden_item .text p{
     color: black;
     text-align: left;
     font-size: .9rem;
     font-weight: 400;
 }
 
-.hidden_item .text p em{
+footer .hidden_item .text p em{
     font-style: normal;
     color: #fd5956;
     font-weight: 600;
 }
 
-.hidden_item img{
+footer .hidden_item img{
     width: 11rem;
 }

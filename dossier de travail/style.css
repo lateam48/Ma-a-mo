@@ -6,13 +6,17 @@
 
 body{
     height: 100vh;
-    overflow-y: hidden;
+    position: relative;
+    /* overflow-y: hidden; */
 }
 
+
+/* -----------------navigation-------------------- */
 
 .navigation{
     display: flex;
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     padding: 1rem;
@@ -24,6 +28,12 @@ body{
     height: 20px;
 }
 
+
+
+
+
+
+/* -------------------container--------------------- */
 .container{
     display: flex;
     flex-direction: column;
@@ -35,39 +45,28 @@ body{
  
 }
 
-div{
-    /* border: 2px solid; */
-    text-align: center;
-}
-p{
-    height: 50px;
-    font-size: 30px;
-    width: 100vw;
-}
+
 
 .container_wrapper {
    
     height: 100vh;
-    width: 100vw;
+    width: 200vw;
     display: flex;
     justify-content: center;
     background-color: rgba(0, 119, 255, 0.74);
 
-    /* pour deplacer le header */
-    /* transform: translateX(50vw); */ 
+
+    /*############### pour deplacer le header ##############*/
+    /* transform: translateX(-25vw);  */
 }
-.cosmetique{
+
+
+.container_cosmetique{
     width: 100%;
     background-color:#c1dff3;
 }
-.boulangerie{
+.container_boulangerie{
     width: 100%;
     background-color:#e1c1f3;
 }
 
-
-.footer{
-    height: 20vh;
-    background-color: rgb(250, 235, 215);
-    width: 100vw;
-}
