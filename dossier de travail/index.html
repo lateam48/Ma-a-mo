@@ -7,34 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navigation">
-        <div class="logo">
+        <div class="logo-navigation">
             <a href=""><img src="/Asset/images/semi logo.png" alt=""></a>
         </div>
         <nav>
-            <a href="#" onclick="fosso_click('acceuil')">Acceuil</a>
-            <a href="#" onclick="fosso_click('cosmetique')">Cosmétique</a>
-            <a href="#" onclick="fosso_click('boulangerie')">Boulangerie</a>
-            <a href="#" onclick="fosso_click('contact')">Contact</a>
-            <a href="#" onclick="fosso_click('apropos')">À Propos</a>
+            <a href="#" class="navigation_link" onclick="fosso_click('acceuil')">Acceuil</a>
+            <a href="#" class="navigation_link" onclick="fosso_click('cosmetique')">Cosmétique</a>
+            <a href="#" class="navigation_link" onclick="fosso_click('boulangerie')">Boulangerie</a>
+            <a href="#representation" class="navigation_link" onclick="fosso_click('contact')">Contact</a>
+            <!-- <a href="#" class="navigation_link" onclick="fosso_click('apropos')">À Propos</a> -->
         </nav>
     </div>
     <div class="container">
         <div class="container_wrapper">
+            <div class="logo">
+                <img src="Asset/images/semi logo.png" alt="logo" id="logo_gen">
+                <!-- <img src="images/logo_cos.png" alt="logo_cos" id="logo_cos"> -->
+            </div>
             <div class="container_cosmetique">
                 <div class="header_cosmetique">
                     <div class="header_cosmetique_text" id="header_cosmetique_text">
-                        <h2>Ma'a Mo Cosmétique</h2>
-                        <p>
-                            Votre boutique dédiée à la beauté africaine, vous invite à découvrir une sélection de produits cosmétiques naturels et de qualité, spécialement conçus pour répondre aux besoins de votre peau.
-                        </p>
-                        <h2>Notre mission</h2>
-                        <p>
-                            Célébrer la beauté naturelle de la femme africaine en lui offrant des produits sains, efficaces et respectueux de sa peau.
-                        </p>
+                        <div class="header_cosmetique_text_wrapper">
+                            <h2>Ma'a Mo Cosmétique</h2>
+                            <p>
+                                Votre boutique dédiée à la beauté africaine, vous invite à découvrir une sélection 
+                                de produits cosmétiques naturels et de qualité, spécialement conçus pour répondre 
+                                aux besoins de votre peau.
+                            </p>
+                            <h3>Notre mission</h3>
+                            <p>
+                                Célébrer la beauté naturelle de la femme africaine en lui offrant des produits sains, 
+                                efficaces et respectueux de sa peau.
+                            </p>
+                        </div>
+                        
                     </div>
             
                     <div class="header_cosmetique_image" id="header_cosmetique_image">
@@ -46,7 +61,20 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="produits">
+                    <h2>Nos Produits</h2>
+                    <div class="images">
+                        <img src="Asset/images/pourries/cosmetique/bicarbonate poudre.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/bidon 1.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/bidon 2.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/bidon javel 2.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/glycerine orange.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/dissolvant.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/bouteille tout couleur.png" alt="">
+                        <img src="Asset/images/pourries/cosmetique/" alt="">
+                        <img src="Asset/images/pourries/cosmetique/" alt="">
+                    </div>
+                </div>
             </div>
             <div class="container_boulangerie">
                 <div class="header_boulangerie">
@@ -74,14 +102,72 @@
                         <img src="Asset/images/bread1.png" alt="">
                     </div>
                 </div>
-
+                <div class="produits">
+                    <h2>Nos Produits</h2>
+                    <div class="images">
+                        <img src="Asset/images/pourries/boulangerie/amburger.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/cup_cake.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/gateaux de mariage.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/gateaux kumba.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/gateaux_creme.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/pains.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/amburger.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/amburger.png" alt="">
+                        <img src="Asset/images/pourries/boulangerie/amburger.png" alt="">
+                    </div>
+                </div>
+                
+                
             </div>
         </div>
     </div>
     
 
 
-
+    <div class="contact" id="representation">
+        <h1>NOUS CONTACTER!</h1>
+        <div class="adresses">
+            <div class="adress">
+                <h2>CONTACT</h2>
+                <span>Agences Ndiengdam-Bafoussam</span>
+                <!-- <span>75020 Paris, France</span> <br> -->
+                <span>Tél: +237 670 66 15 50 <br>
+                            +237 691 46 52 91
+                </span>
+                <span>info@monsite.fr</span><br><br>
+                
+            </div>
+            <div class="formulaire">
+                <form action="">
+                    <div class="noms">
+                        <div class="prenom">
+                            <label for="prenom">Prénom <sup>*</sup></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="nom">
+                            <label for="nom">Nom de famille <sup>*</sup></label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="emailObject">
+                        <div class="email">
+                            <label for="email">E-mail <sup>*</sup></label>
+                            <input type="email" required>
+                        </div>
+                        <div class="object">
+                            <label for="object">Object</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message"> Message</label>
+                        <textarea name="message" id="" cols="50" rows="8"></textarea>
+                    </div>
+                    <button>Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -156,6 +242,7 @@
                 </em> | 2024</div>
         </div>
     </footer>
+    <script src="script.js"></script>
     <script src="footer.js"></script>
 </body>
 </html>

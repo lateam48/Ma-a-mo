@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-
+:root{
+    --body-overflow-y: hidden;
+}
 
 
 body{
     height: 100vh;
     position: relative;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 
@@ -49,14 +51,14 @@ body{
     
 }
 
-.navigation nav a {
+.navigation .navigation_link{
     color: var(--main-color);
     font-size: 1.3rem;
 }
 
 /* ******************classe ajoute pour mettre un border sur les liens du nav lorsque celui ci est clique************ */
 
-.link_active{
+.navigation .navigation_link.link_active{
     border-bottom: 4px solid var(--secondary-color);
 }
 
@@ -69,32 +71,124 @@ body{
     justify-content: center;
     /* background-color: #f3eea2; */
     /* width: 100vw; */
-    /* overflow: hidden; */
+    overflow: hidden;
  
 }
 
 
 
 .container_wrapper {
-   
-    height: 100vh;
-    width: 200vw;
+    position: relative;
+    /* height: 100vh;
+    width: 200vw; */
     display: flex;
     justify-content: center;
     /* background-color: rgba(0, 119, 255, 0.74); */
 
 
     /*############### pour deplacer le .navigation ##############*/
-    /* transform: translateX(50vw);  */
+    /* transform: translateX(-50vw);  */
+}
+
+/* *******************classe ajouter au home pour le defilement 50********************** */
+
+
+.container_wrapper.home_defil1{
+    transform: translateX(50vw);
+    transition: transform .9s ease-in-out;
+}
+.container_wrapper.home_defil{
+    transform: translateX(-50vw);
+    transition: transform .9s ease-in-out;
+}
+
+.container_wrapper.home_defil2{
+    transform: translateX(0vw);
+    transition: transform 2s ease-in-out;
 }
 
 
-/* .container_cosmetique{
-    width: 100%;
-    background-color:#c1dff3;
-}
-.container_boulangerie{
-    width: 100%;
-    background-color:#e1c1f3;
-} */
 
+/* *****************************style des logo ************* */
+
+
+@keyframes fuite_animation {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(45vw) translateY(-60px);
+      opacity: 0;
+    }
+    
+}
+@keyframes fuite_animation_cos {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-45vw) translateY(-60px);
+      opacity: 0;
+    }
+    
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+#logo_gen{
+    max-width: 150px;
+    position: absolute;
+    right: 48%;
+    top: 50%;
+    z-index: 5;
+
+}
+
+#logo_gen.fuite_logo_cos{
+    animation: fuite_animation_cos 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#logo_gen.fuite_logo{
+    animation: fuite_animation 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#logo_blg.fade_logo_blg{
+    animation-delay: 5s;
+    animation: fade-in 5s ease-in-out;
+    animation-fill-mode: forwards;
+} 
+
+#logo_cos.fade_logo_cos{
+    animation-delay: 5s;
+    animation: fade-in 5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* ********************style produits ************* */
+
+.produits{
+    padding: 3rem;
+}
+
+.produits h2{
+    text-align: center;
+}
+
+.produits .images{
+    display: grid;
+    grid-template-columns: repeat(3, 450px); /* Définir trois rangées de 100px chacune */
+    gap: 20px; /* Définir un espacement de 20px entre les cellules */
+    justify-content: center; /* Aligner les éléments horizontalement au centre */
+    align-items: center; 
+}

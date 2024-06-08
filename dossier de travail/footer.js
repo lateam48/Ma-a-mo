@@ -1,5 +1,5 @@
 let link_team48 = document.querySelector(".link_team48");
-console.log(link_team48.children[1]);
+// console.log(link_team48.children[1]);
 
 function show_team48_summary(param) {
     if (param) {

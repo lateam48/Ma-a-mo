@@ -1,0 +1,113 @@
+.contact{
+    background-color: #c296b8;
+}
+
+
+.contact h1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid;
+    font-size: 2.5rem;
+    padding: 1.5rem 7rem;
+    margin-top: 10rem;
+    margin-left: 40rem;
+    margin-bottom: 5rem;
+    width: 20%;
+    letter-spacing: .3rem;
+    
+}
+
+.adresses{
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.adress h2{
+    padding-bottom: 1rem;
+}
+
+
+.noms{
+    display: flex;
+    gap: 2rem
+}
+
+.prenom{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.prenom input{
+    margin-bottom: .6rem;
+}
+
+
+.nom{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.nom input{
+    margin-bottom: .6rem;
+}
+.emailObject{
+    display: flex;
+    gap: 2rem;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.object{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+form input{
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+textarea{
+    background-color: transparent;
+    border: 1px solid;
+}
+
+form button{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: .9rem 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+
+form button:hover{
+    color: black;
+    background-color: transparent;
+    border: 1px solid;
+}
