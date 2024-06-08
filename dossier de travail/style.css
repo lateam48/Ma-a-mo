@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 
-:root{
+/* :root{
     --body-overflow-y: hidden;
-}
+    --main-color: #5f1d50;
+    --secondary-color: #a0c520;
+    --bg-blg_1: #ffe2f8;
+    --bg_blg_2: #F1A8E0;
+    --bg_blg_3: #E76FCC;
+    --bg_blg_4: #DB27B3;
+    --bg_cosmetique_1: #FFFBD8;
+    --bg_cosmetique_2: #FFDD55;
+    --color_orange: #EC6708;
+    --color_vert: #A0C520;
+    --light-color: white;
+    --gris-bas:  #575656;
+} */
 
 
 body{
@@ -175,20 +187,51 @@ body{
 }
 
 
-/* ********************style produits ************* */
-
-.produits{
-    padding: 3rem;
+.cosmetique_produits > div{
+    padding: 5rem 0;
 }
 
-.produits h2{
+.cosmetique_produits > div:nth-of-type(2){
+    
+}
+.cosmetique_produits > div h2{
     text-align: center;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    font-family: var(--police-secondaire);
+    font-size: 2rem;
+}
+.cosmetique_produits > div > div{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 3rem;
+    line-height: 1.5rem;
+}
+.cosmetique_produits > div > div img{
+    max-width: 400px;
 }
 
-.produits .images{
-    display: grid;
-    grid-template-columns: repeat(3, 450px); /* Définir trois rangées de 100px chacune */
-    gap: 20px; /* Définir un espacement de 20px entre les cellules */
-    justify-content: center; /* Aligner les éléments horizontalement au centre */
-    align-items: center; 
+/* ********************style dermatologie ************* */
+
+
+
+.dermatologie{
+    /* padding: 3rem; */
+    border-top: 3rem solid var(--main-color);
+    margin-bottom: 3rem;
 }
+
+
+
+.maquillage{
+    margin-bottom: 3rem;
+    background-color: var(--bg-blg_1);
+    padding: 2rem 0;
+    flex-direction: row-reverse;
+}
+
+
+
