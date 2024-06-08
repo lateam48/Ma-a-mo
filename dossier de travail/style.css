@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 body{
     height: 100vh;
     position: relative;
@@ -12,6 +15,12 @@ body{
 
 
 /* -----------------navigation-------------------- */
+
+
+@keyframes descendre {
+    from { transform: translateY(-100%); } /* Déplace l'élément 100% au-dessus de l'écran */
+    to { transform: translateY(0); } /* Déplace l'élément à sa position normale */
+}
 
 .navigation{
     display: flex;
@@ -22,15 +31,34 @@ body{
     padding: 1rem;
     background-color: rgb(250, 235, 215);
     justify-content: space-between;
+    padding: 1.5rem 3rem;
+    background-color: rgba(93, 120, 138, 0.1);
+    animation-delay: 30s;
+    animation: descendre 2s ease-in-out;
+    
 }
 
 .navigation img{
-    height: 20px;
+    height: 50px;
 }
 
+.navigation nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    
+}
 
+.navigation nav a {
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
 
+/* ******************classe ajoute pour mettre un border sur les liens du nav lorsque celui ci est clique************ */
 
+.link_active{
+    border-bottom: 4px solid var(--secondary-color);
+}
 
 
 /* -------------------container--------------------- */
@@ -39,9 +67,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f3eea2;
-    width: 100vw;
-    overflow: hidden;
+    /* background-color: #f3eea2; */
+    /* width: 100vw; */
+    /* overflow: hidden; */
  
 }
 
@@ -53,20 +81,20 @@ body{
     width: 200vw;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 119, 255, 0.74);
+    /* background-color: rgba(0, 119, 255, 0.74); */
 
 
-    /*############### pour deplacer le header ##############*/
-    /* transform: translateX(-25vw);  */
+    /*############### pour deplacer le .navigation ##############*/
+    /* transform: translateX(50vw);  */
 }
 
 
-.container_cosmetique{
+/* .container_cosmetique{
     width: 100%;
     background-color:#c1dff3;
 }
 .container_boulangerie{
     width: 100%;
     background-color:#e1c1f3;
-}
+} */
 

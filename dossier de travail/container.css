@@ -1,0 +1,291 @@
+:root{
+    --main-color: #5f1d50;
+    --secondary-color: #a0c520;
+    --bg-blg_1: #ffe0f8;
+    --bg_blg_2: #F1A8E0;
+    --bg_blg_3: #E76FCC;
+    --bg_blg_4: #DB27B3;
+    --bg_cosmetique_1: #FFFBD8;
+    --bg_cosmetique_2: #FFDD55;
+    --color_orange: #EC6708;
+    --color_vert: #A0C520;
+    --light-color: white;
+    --gris-bas:  #575656;
+}
+/* *****************animations utilisees***** */
+
+
+
+
+/* animation pour faire apparaitre le texte cliquer pour entrer lorsqu'on hover sur le bouton */
+
+@keyframes apparaitre {
+    from { opacity: 0; transform: translateY(-100%);}
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+@keyframes fuite_animation {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(45vw) translateY(-60px);
+      opacity: 0;
+    }
+    
+}
+
+@keyframes fuite_animation_cos {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-45vw) translateY(-60px);
+      opacity: 0;
+    }
+    
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes apparaitre-hover {
+    from { opacity: 1; transform: translateY(0);}
+    to { opacity: 0; transform: translateY(-100%); }
+}
+
+
+
+/* **********************header_cosmetique_text ***************** */
+.header_cosmetique{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    
+}
+.header_cosmetique_text{
+    width: 50vw;
+    
+    padding: 8rem 2rem;
+    background-color: var(--bg-blg_1);
+    /* align-self: center; */
+}
+
+.header_cosmetique_text h2{
+    padding: 3rem;
+    
+    
+}
+
+.header_cosmetique_text p{
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+}
+
+
+/* ***************************header_cosmetique)image*************** */
+.header_cosmetique_image{
+    height: 100%;
+    width: 50vw;
+    background-image: url(Asset/images/cosmetique\ bg\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--bg-blg_1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header_cosmetique_image img{
+    max-width: 150px;
+    opacity: 0;
+}
+
+.header_cosmetique_image .bouton{
+    /* position: absolute;
+    top: 25%;
+    left: 40%; */
+}
+
+.header_cosmetique_image button{
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header_cosmetique_image .bouton p{
+    opacity: 0;
+    padding: .2rem 0;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: .85rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    animation-delay: 20s;
+    animation: apparaitre 3s ease-in-out;  /*faire apparaitre l'indice apres le chargement de la page*/
+    animation-fill-mode: forwards;
+    transition:  translate 2s;
+}
+
+.header_cosmetique_image button:hover ~ p{
+    /* translate: 0 -4rem; */
+    animation: apparaitre-hover 400ms ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+
+/* **************************h.header_boulangerie_text********************** */
+
+.header_boulangerie{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+}
+
+
+
+
+.header_boulangerie_text{
+    width: 50vw;
+   height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 8rem;
+    background-color: var(--bg_cosmetique_1);
+    justify-self: center;
+}
+
+.header_boulangerie_text h2{
+    padding: 3rem 0;
+    font-size: 2.4rem;
+    color: var(--gris-bas);
+    text-transform: uppercase;
+}
+.header_boulangerie_text img{
+    max-width: 15rem;
+    
+}
+
+.header_boulangerie_text p{
+    font-size: 1rem;
+    padding: .8rem 0;
+    line-height: 2rem;
+}
+
+/* **************************header_boulangerie_image**************** */
+
+
+.header_boulangerie_image{
+    width: 50vw;
+    background-image: url("Asset/images/patisseriebg1.png");
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-color: var(--bg_cosmetique_1);
+    padding: .5rem;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    
+}
+
+.header_boulangerie_image img{
+    max-width: 150px;
+    opacity: 0;
+}
+
+.header_boulangerie_image button{
+    z-index: 2;
+    
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.header_boulangerie_image .bouton p{
+    opacity: 0;
+    padding: .2rem 0;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: .85rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    animation-delay: 50s;
+    animation: apparaitre 3s ease-in-out;  /*faire apparaitre l'indice apres le chargement de la page*/
+    animation-fill-mode: forwards;
+    transition:  translate 2s;
+    
+}
+
+
+
+.header_boulangerie_image button:hover ~ p{
+    /* translate: 0 -4rem; */
+    animation: apparaitre-hover 400ms ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+
+/* *****************************style des logo ************* */
+
+.logo img{
+    max-height: 150px;
+}
+
+#logo_gen{
+    position: fixed;
+    right: 46%;
+    top: 45%;
+    z-index: 2;
+
+}
+
+#logo_gen.fuite_logo_cos{
+    animation: fuite_animation_cos 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#logo_gen.fuite_logo{
+    animation: fuite_animation 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#logo_blg.fade_logo_blg{
+    animation-delay: 5s;
+    animation: fade-in 5s ease-in-out;
+    animation-fill-mode: forwards;
+} 
+
+#logo_cos.fade_logo_cos{
+    animation-delay: 5s;
+    animation: fade-in 5s ease-in-out;
+    animation-fill-mode: forwards;
+}
