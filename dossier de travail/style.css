@@ -103,7 +103,8 @@ body{
 
 
     /*############### pour deplacer le .navigation ##############*/
-    /* transform: translateX(-50vw);  */
+    /* transform: translateX(50vw);  */
+    transition: .4s ;
 }
 
 /* *******************classe ajouter au home pour le defilement 50********************** */
@@ -197,9 +198,7 @@ body{
     padding: 5rem 0;
 }
 
-.cosmetique_produits > div:nth-of-type(2){
-    
-}
+
 .cosmetique_produits > div h2{
     text-align: center;
     margin-bottom: 2rem;
@@ -248,9 +247,6 @@ body{
     padding: 5rem 0;
 }
 
-.boulangerie_produits > div:nth-of-type(2){
-    
-}
 .boulangerie_produits > div h2{
     text-align: center;
     margin-bottom: 2rem;
@@ -258,15 +254,17 @@ body{
     font-family: var(--police-secondaire);
     font-size: 2rem;
 }
+
 .boulangerie_produits > div > div{
     max-width: 1000px;
     margin: auto;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
+    align-items: center;
     gap: 3rem;
     line-height: 1.5rem;
 }
+
 .boulangerie_produits > div > div img{
     max-width: 400px;
 }
