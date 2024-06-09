@@ -64,14 +64,18 @@ body{
 }
 
 .navigation .navigation_link{
+    transition: 700ms;
     color: var(--main-color);
     font-size: 1.3rem;
+    border-bottom: 4px solid  ;
+    border-bottom-color: #00000000 ;
 }
 
 /* ******************classe ajoute pour mettre un border sur les liens du nav lorsque celui ci est clique************ */
 
 .navigation .navigation_link.link_active{
-    border-bottom: 4px solid var(--secondary-color);
+    border-bottom-color: var(--secondary-color)  ;
+
 }
 
 
@@ -104,7 +108,9 @@ body{
 
 /* *******************classe ajouter au home pour le defilement 50********************** */
 
-
+.container_wrapper.initialize{
+    transform: translateX(0vw);
+}
 .container_wrapper.home_defil1{
     transform: translateX(50vw);
     transition: transform .9s ease-in-out;
@@ -186,7 +192,7 @@ body{
     animation-fill-mode: forwards;
 }
 
-
+/* ******************** style produits cosmetique **************** */
 .cosmetique_produits > div{
     padding: 5rem 0;
 }
@@ -235,3 +241,51 @@ body{
 
 
 
+/* *********************style produits boulangerie ********* */
+
+
+.boulangerie_produits > div{
+    padding: 5rem 0;
+}
+
+.boulangerie_produits > div:nth-of-type(2){
+    
+}
+.boulangerie_produits > div h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    font-family: var(--police-secondaire);
+    font-size: 2rem;
+}
+.boulangerie_produits > div > div{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 3rem;
+    line-height: 1.5rem;
+}
+.boulangerie_produits > div > div img{
+    max-width: 400px;
+}
+
+
+
+
+
+.patisserie{
+    /* padding: 3rem; */
+    border-top: 3rem solid var(--main-color);
+    margin-bottom: 3rem;
+}
+
+
+
+.yaourt{
+    margin-bottom: 3rem;
+    background-color: var(--bg_cosmetique_1);
+    padding: 2rem 0;
+    flex-direction: row-reverse;
+}

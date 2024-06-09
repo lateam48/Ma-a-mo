@@ -16,41 +16,27 @@ console.log(navLink)
 
 navLink[0].classList.add('link_active');
 
+function initialization() {
+    navLink.forEach(element => {
+       element.classList.remove('link_active');
+    });
+}
+
+
 //fonction pour les modifications qui s'applique lorsqu'on
 // clique sur le lien acceuil ou pour recharger la page
 
 function acceuil_click() {
-    body.style.overflowY = 'hidden';
-    navLink[0].classList.add("link_active");
-    containerWrapper.classList.add("home_defil2");
-    containerWrapper.classList.remove("home_defil1");
-    logo_gen.classList.remove("fuite_logo_cos");
-    logo_cos.classList.remove("fade_logo_cos");
-    containerWrapper.classList.remove("home_defil");
-    logo_gen.classList.remove("fuite_logo");
-    logo_blg.classList.remove("fade_logo_blg");
-    
-    blg_paragraph.style.visibility = "visible";
-    cos_paragraph.style.visibility = "visible";
-    
+    initialization()
+    navLink[0].classList.add('link_active');
 }
 
 //fonction pour les modifications qui s'applique lorsqu'on
 // clique sur le lien cosmetique ou bouton cosmetique
 
 function cosmetique_click() {
-    body.style.overflowY = 'visible';
-    navLink[1].classList.add("link_active");
-    containerWrapper.classList.add("home_defil1");
-    logo_gen.classList.add("fuite_logo_cos");
-    logo_cos.classList.add("fade_logo_cos");
-    cos_paragraph.style.visibility = "hidden";
-
-    // retirer les class ajouter sur l'element boulangerie
-    containerWrapper.classList.remove("home_defil");
-    logo_gen.classList.remove("fuite_logo");
-    logo_blg.classList.remove("fade_logo_blg");
-    containerWrapper.classList.remove("home_defil2");
+    initialization();
+    navLink[1].classList.add('link_active');
     
 }
 
@@ -58,55 +44,44 @@ function cosmetique_click() {
 // clique sur le lien boulqngerie ou bouton boulangerie
 
 function boulangerie_click() {
-    navLink[2].classList.add("link_active");
-    containerWrapper.classList.add("home_defil");
-    logo_gen.classList.add("fuite_logo");
-    logo_blg.classList.add("fade_logo_blg");
-    blg_paragraph.style.visibility = "hidden";
-
-    body.style.overflowY = 'visible';
-    // retirer les class ajouter sur l'element cosmetique
-    containerWrapper.classList.remove("home_defil1");
-    logo_gen.classList.remove("fuite_logo_cos");
-    logo_cos.classList.remove("fade_logo_cos");
-    containerWrapper.classList.remove("home_defil2");
-    
+    initialization();
+    navLink[2].classList.add('link_active');
 
 }
 
 
 function contact_click() {
-    navLink[3].classList.add("link_active");
+    initialization();
+    navLink[3].classList.add('link_active');
 }
 
-function apropos_click() {
-    navLink[4].classList.add("link_active");
-}
-function fosso_click(parametre) {
 
-    navLink.forEach(element => {
-        element.classList.remove("link_active");
-    });
+
+// function fosso_click(parametre) {
+
+//     navLink.forEach(element => {
+//         element.classList.remove("link_active");
+//     });
     
 
-    switch (parametre) {
-        case 'acceuil':
-            acceuil_click();
-            break;
-        case 'cosmetique':
+//     switch (parametre) {
+//         case 'acceuil':
+//             acceuil_click();
+//             break;
+//         case 'cosmetique':
 
-            cosmetique_click();
-            break;
-        case 'boulangerie':
-            boulangerie_click();
-            break;
-        case 'contact':
-            contact_click();
-            break;
-        case 'apropos':
-            apropos_click();
-            break;
-        default:
-            break;
-    }
-}
+//             cosmetique_click();
+//             break;
+//         case 'boulangerie':
+//             boulangerie_click();
+//             break;
+//         case 'contact':
+//             contact_click();
+//             break;
+//         case 'apropos':
+//             apropos_click();
+//             break;
+//         default:
+//             break;
+//     }
+// }

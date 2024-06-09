@@ -187,9 +187,6 @@
     
 }
 
-
-
-
 .header_boulangerie_text{
     width: 50vw;
    height: 100%;
@@ -202,6 +199,23 @@
     padding: 0 8rem;
     background-color: var(--bg_cosmetique_1);
     justify-self: center;
+}
+
+
+/* *************************style header_boulangerie_text_wrapper */
+
+.header_boulangerie_text_wrapper{
+    background-color: var(--main-color);
+    box-shadow: 5px 3px 3px rgba(68, 57, 57, 0.582);
+    color: #fff;
+    height: 80vh;
+    width: 30vw;
+    margin: auto;
+    padding: 3rem;
+    background-image: url(Asset/images/big\ leaf.png) ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right bottom ;
 }
 
 .header_boulangerie_text h2{
@@ -222,7 +236,6 @@
 }
 
 /* **************************header_boulangerie_image**************** */
-
 
 .header_boulangerie_image{
     width: 50vw;
