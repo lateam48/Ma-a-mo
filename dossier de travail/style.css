@@ -42,14 +42,16 @@ body{
     z-index: 1;
     top: 0;
     width: 100%;
-    padding: 1rem;
-    background-color: rgb(250, 235, 215);
+    /* height: 10vh; */
     justify-content: space-between;
+    align-items: center;
+    background-color: #d8d8d8bd;
+    backdrop-filter: blur(10px);
     padding: 1.5rem 3rem;
-    background-color: rgba(93, 120, 138, 0.1);
     animation-delay: 30s;
     animation: descendre 2s ease-in-out;
-    
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    transition: height .5s ease;
 }
 
 .navigation img{
@@ -59,7 +61,7 @@ body{
 .navigation nav{
     display: flex;
     justify-content: space-between;
-    gap: 3.5rem;
+    gap: 3rem;
     
 }
 
@@ -67,8 +69,8 @@ body{
     transition: 700ms;
     color: var(--main-color);
     font-size: 1.3rem;
-    border-bottom: 4px solid  ;
-    border-bottom-color: #00000000 ;
+    border-bottom: 4px solid #00000000 ;
+    padding-bottom: 15px;
 }
 
 /* ******************classe ajoute pour mettre un border sur les liens du nav lorsque celui ci est clique************ */
@@ -256,6 +258,7 @@ body{
 }
 
 .boulangerie_produits > div > div{
+    padding: 0 2rem;
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -287,3 +290,6 @@ body{
     padding: 2rem 0;
     flex-direction: row-reverse;
 }
+
+
+/*  */

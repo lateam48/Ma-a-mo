@@ -116,7 +116,8 @@
 
 .header_cosmetique_text p{
     font-size: 1rem;
-    
+    padding: .8rem 0;
+    line-height: 2rem;
 }
 
 
@@ -290,6 +291,62 @@
     /* animation-direction: reverse; */
 }
 
+
+
+/* responsive */
+
+@media (max-width : 1600px) {
+    .header_cosmetique_text_wrapper,.header_boulangerie_text_wrapper{
+        width: fit-content;
+    }
+
+    .header_boulangerie_text p{
+        line-height: 1.5rem;
+    }
+}
+
+
+@media (max-width : 900px) {
+    .hidden-paragraph{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    html{
+        font-size: 92%;
+    }
+
+    .header_cosmetique_text h2, .header_boulangerie_text h2{
+        margin: 1rem 0;
+    }
+
+    .header_cosmetique_text p{
+        line-height: 1.5rem;
+    }
+
+    .boulangerie_produits > div, .cosmetique_produits > div{
+        padding: 2rem 1rem;
+    }
+
+    .boulangerie_produits > div > div,.cosmetique_produits > div > div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 2rem;
+
+        padding: 1.5rem;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    
+
+    
+}
 
 
 
